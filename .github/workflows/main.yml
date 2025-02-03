@@ -1,0 +1,50 @@
+name: Helm Indexing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  helm-package-and-index:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Install Helm and yq
+      - name: Install Helm and yq
+        run: |
+          # Install Helm
+          curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+          helm version
+          # Install yq (v4.32.2, stable version)
+          curl -sL https://github.com/mikefarah/yq/releases/download/v4.32.2/yq_linux_amd64 -o /usr/local/bin/yq
+          chmod +x /usr/local/bin/yq
+          yq --version  # Verify yq installation
+      # 3. Run the custom packaging script
+      - name: Run Helm Package Script
+        run: |
+          ROOT_DIR="."
+          echo "Generating Helm repository index..."
+          helm repo index "./"
+          echo "Helm repository index updated successfully."
+      # 4. Commit the packaged charts and index.yaml
+      - name: Commit packaged charts and index.yaml
+        env:
+          GH_TOKEN: ${{ secrets.GH_CLASSIC_TOKEN_CURRENT_REPO_ACCESSS }}  # Using the secret for token authentication
+        run: |
+          # Configure git
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"
+          # Set up authentication for GitHub using the personal access token
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git config --global credential.helper store
+          echo "https://x-access-token:${GH_CLASSIC_TOKEN_CURRENT_REPO_ACCESSS}@github.com" > ~/.git-credentials
+          # Add the packaged charts and index.yaml
+          git add index.yaml
+          # Commit the changes
+          git commit -m "update index.yaml"
+          # Push the changes back to the repository
+          git push origin main
