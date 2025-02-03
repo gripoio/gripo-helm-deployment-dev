@@ -3,7 +3,7 @@ entries:
   helm-source-gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-03T12:50:00.741680523Z"
+    created: "2025-02-03T12:57:59.836726044Z"
     description: A Helm chart for Kubernetes
     digest: d8dac01c1a55f3cded3906cf931be49bbfb62b48842234da3910a41668ad155c
     name: helm-source-gripo
@@ -11,4 +11,4 @@ entries:
     urls:
     - packages/helm-source-gripo-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-03T12:50:00.741083085Z"
+generated: "2025-02-03T12:57:59.836116864Z"
