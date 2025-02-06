@@ -3,7 +3,7 @@ entries:
   gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-04T17:24:23.011869035Z"
+    created: "2025-02-06T11:03:17.585179962Z"
     description: A Helm chart for gripo deployment
     digest: 8ec3c11b5dc4a42732f06cedcb868ee72ae6db1e142c9f866985383e594af11c
     name: gripo
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-04T17:24:23.011443232Z"
+    created: "2025-02-06T11:03:17.584603578Z"
     description: A Helm chart for gripo deployment
     digest: 51915344233bae403607b9010294a671c9b7f10b49147e3b70169b8ef768e2a3
     name: gripo
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-04T17:24:23.010971052Z"
+    created: "2025-02-06T11:03:17.584179357Z"
     description: A Helm chart for gripo deployment
     digest: d6f063a3e2a0e7256efccbcd4dfc381f9782f7f473eb787f9b9bada2b47b140c
     name: gripo
@@ -34,7 +34,7 @@ entries:
   helm-source-gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-04T17:24:23.012293145Z"
+    created: "2025-02-06T11:03:17.586009459Z"
     description: A Helm chart for Kubernetes
     digest: d8dac01c1a55f3cded3906cf931be49bbfb62b48842234da3910a41668ad155c
     name: helm-source-gripo
@@ -42,4 +42,4 @@ entries:
     urls:
     - packages/helm-source-gripo-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-04T17:24:23.009199414Z"
+generated: "2025-02-06T11:03:17.583592884Z"
