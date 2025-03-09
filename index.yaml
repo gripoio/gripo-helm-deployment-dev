@@ -3,7 +3,7 @@ entries:
   gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-06T11:03:17.585179962Z"
+    created: "2025-03-09T22:10:00.608713412Z"
     description: A Helm chart for gripo deployment
     digest: 8ec3c11b5dc4a42732f06cedcb868ee72ae6db1e142c9f866985383e594af11c
     name: gripo
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-06T11:03:17.584603578Z"
+    created: "2025-03-09T22:10:00.608309148Z"
     description: A Helm chart for gripo deployment
     digest: 51915344233bae403607b9010294a671c9b7f10b49147e3b70169b8ef768e2a3
     name: gripo
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-06T11:03:17.584179357Z"
+    created: "2025-03-09T22:10:00.607880699Z"
     description: A Helm chart for gripo deployment
     digest: d6f063a3e2a0e7256efccbcd4dfc381f9782f7f473eb787f9b9bada2b47b140c
     name: gripo
@@ -31,10 +31,21 @@ entries:
     urls:
     - packages/gripo-0.1.0.tgz
     version: 0.1.0
+  gripo-mac:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-03-09T22:10:00.609139978Z"
+    description: A Helm chart for gripo deployment on mac systems
+    digest: 1ca9bfc712e16a5b0183ee7dad476dbc5d2fcffa612da7b02e80de608dc2fa24
+    name: gripo-mac
+    type: application
+    urls:
+    - packages/gripo-mac-0.1.2.tgz
+    version: 0.1.2
   helm-source-gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-06T11:03:17.586009459Z"
+    created: "2025-03-09T22:10:00.610526327Z"
     description: A Helm chart for Kubernetes
     digest: d8dac01c1a55f3cded3906cf931be49bbfb62b48842234da3910a41668ad155c
     name: helm-source-gripo
@@ -42,4 +53,4 @@ entries:
     urls:
     - packages/helm-source-gripo-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-06T11:03:17.583592884Z"
+generated: "2025-03-09T22:10:00.607299475Z"
