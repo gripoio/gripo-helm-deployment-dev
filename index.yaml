@@ -3,7 +3,7 @@ entries:
   aiagent:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.789990031Z"
+    created: "2025-11-08T20:37:33.759656379Z"
     description: A Helm chart for gripo-ai-agent deployment
     digest: 3ca1ed03713af1158e5cc65033bb094f1c6ec8635a030c17e6376bc779e0de5e
     name: aiagent
@@ -14,7 +14,7 @@ entries:
   gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.792555834Z"
+    created: "2025-11-08T20:37:33.761175865Z"
     dependencies:
     - condition: aiagent.enabled
       name: aiagent
@@ -29,7 +29,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.791756751Z"
+    created: "2025-11-08T20:37:33.760454519Z"
     description: A Helm chart for gripo deployment
     digest: 51915344233bae403607b9010294a671c9b7f10b49147e3b70169b8ef768e2a3
     name: gripo
@@ -39,7 +39,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.790416057Z"
+    created: "2025-11-08T20:37:33.76004465Z"
     description: A Helm chart for gripo deployment
     digest: d6f063a3e2a0e7256efccbcd4dfc381f9782f7f473eb787f9b9bada2b47b140c
     name: gripo
@@ -50,7 +50,7 @@ entries:
   gripo-ai-agnet:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.792937698Z"
+    created: "2025-11-08T20:37:33.761497097Z"
     description: A Helm chart for gripo-ai-agnet deployment
     digest: e7678b7e6be5d7ff1c964f167f4f53dd048b99f10e32bcc34748d44004dec914
     name: gripo-ai-agnet
@@ -61,13 +61,13 @@ entries:
   gripo-flow:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.806041056Z"
+    created: "2025-11-08T20:37:33.775745235Z"
     dependencies:
     - name: temporal
       repository: https://go.temporal.io/helm-charts
       version: 0.65.0
     description: A Helm chart for gripo-flow deployment
-    digest: 412cd658ce8efa20ef79caf1cdf625e49e127cb2517064c5c2769b2c04c261a1
+    digest: 0de2dd45f1987c8eb3ab23865dd355c91ead9ab252c8c0b428d449f5d4054e6b
     name: gripo-flow
     type: application
     urls:
@@ -76,7 +76,7 @@ entries:
   gripo-mac:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.806456262Z"
+    created: "2025-11-08T20:37:33.776158127Z"
     description: A Helm chart for gripo deployment on mac systems
     digest: 1ca9bfc712e16a5b0183ee7dad476dbc5d2fcffa612da7b02e80de608dc2fa24
     name: gripo-mac
@@ -87,7 +87,7 @@ entries:
   gripo-workflow:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.820135151Z"
+    created: "2025-11-08T20:37:33.790241093Z"
     dependencies:
     - name: temporal
       repository: https://go.temporal.io/helm-charts
@@ -106,7 +106,7 @@ entries:
   helm-source-gripo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-11-06T21:50:43.820554555Z"
+    created: "2025-11-08T20:37:33.790709055Z"
     description: A Helm chart for Kubernetes
     digest: d8dac01c1a55f3cded3906cf931be49bbfb62b48842234da3910a41668ad155c
     name: helm-source-gripo
@@ -114,4 +114,4 @@ entries:
     urls:
     - packages/helm-source-gripo-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-06T21:50:43.789484616Z"
+generated: "2025-11-08T20:37:33.759145639Z"
